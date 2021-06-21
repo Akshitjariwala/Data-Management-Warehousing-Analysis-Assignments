@@ -52,7 +52,7 @@ public class TransactionService  {
         PrintWriter pw = new PrintWriter(fo);
         System.out.println("Log creation started.");
 
-        pw.println("Transaction ID     Operation    Table       Attribute       Before      After       Timestamp");
+        pw.println("Transaction ID     Operation    Table           Attribute       Before      After       Timestamp");
         pw.println("-------------------------------------------------------------------------------------------------------");
 
         for(String log:logs)

@@ -93,15 +93,39 @@ T3:421960683461368 Changes Committed.												21/06/2021 22:47:11
 T2:421960683458800 Update		customers	customer_city	T2 City		T2 City		21/06/2021 22:47:11
 T2:421960683458800 Changes Committed.												21/06/2021 22:47:21
 -------------------------------------------------------------------------------------------------------
-Transaction ID     Operation    Table       Attribute       Before      After       Timestamp
+Transaction ID     Operation    Table       	Attribute       Before      After       Timestamp
 -------------------------------------------------------------------------------------------------------
-T1:421960683458800 SELECT		customers	zip_code		1151					21/06/2021 22:53:32
-T2:421960683457944 SELECT		customers	zip_code		1151					21/06/2021 22:53:32
-T3:421960683461368 SELECT		customers	zip_code		1151					21/06/2021 22:53:37
-T1:421960683458800 Update		customers	customer_city	T2 City		T1 City		21/06/2021 22:53:37
-T1:421960683458800 Changes Committed.												21/06/2021 22:53:48
-T3:421960683461368 Update		customers	customer_city	T2 City		T3 City		21/06/2021 22:53:48
-T3:421960683461368 Changes Committed.												21/06/2021 22:53:53
-T2:421960683457944 Update		customers	customer_city	T2 City		T2 City		21/06/2021 22:53:53
-T2:421960683457944 Changes Committed.												21/06/2021 22:54:03
+T1:421960683458800 SELECT	customers	zip_code	1151			21/06/2021 22:53:32
+T2:421960683457944 SELECT	customers	zip_code	1151			21/06/2021 22:53:32
+T3:421960683461368 SELECT	customers	zip_code	1151			21/06/2021 22:53:37
+T1:421960683458800 Update	customers	customer_city	T2 City	    T1 City	21/06/2021 22:53:37
+T1:421960683458800 Changes Committed.							21/06/2021 22:53:48
+T3:421960683461368 Update	customers	customer_city	T2 City	T3 City	21/06/2021 22:53:48
+T3:421960683461368 Changes Committed.							21/06/2021 22:53:53
+T2:421960683457944 Update	customers	customer_city	T2 City		T2 City	21/06/2021 22:53:53
+T2:421960683457944 Changes Committed.							21/06/2021 22:54:03
+-------------------------------------------------------------------------------------------------------
+Transaction ID     Operation    Table           Attribute       Before      After       Timestamp
+-------------------------------------------------------------------------------------------------------
+T1:421960683457944 SELECT	customers	zip_code	1151			21/06/2021 23:04:45
+T2:421960683458800 SELECT	customers	zip_code	1151			21/06/2021 23:04:45
+T3:421960683461368 SELECT	customers	zip_code	1151			21/06/2021 23:04:50
+T1:421960683457944 Update	customers	customer_city	T2 City	    T1 City	21/06/2021 23:04:50
+T1:421960683457944 Changes Committed.							21/06/2021 23:05:00
+T3:421960683461368 Update	customers	customer_city	T2 City	    T3 City	21/06/2021 23:05:00
+T3:421960683461368 Changes Committed.							21/06/2021 23:05:05
+T2:421960683458800 Update	customers	customer_city	T2 City	    T2 City	21/06/2021 23:05:05
+T2:421960683458800 Changes Committed.							21/06/2021 23:05:15
+-------------------------------------------------------------------------------------------------------
+Transaction ID     Operation    Table           Attribute       Before      After       Timestamp
+-------------------------------------------------------------------------------------------------------
+T1:421960683457944 SELECT	customers	zip_code	1151			21/06/2021 23:13:53
+T2:421960683458800 SELECT	customers	zip_code	1151			21/06/2021 23:13:53
+T3:421960683461368 SELECT	customers	zip_code	1151			21/06/2021 23:13:58
+T1:421960683457944 Update	customers	customer_city	T2 City	    T1 City	21/06/2021 23:13:59
+T1:421960683457944 Changes Committed.							21/06/2021 23:14:09
+T3:421960683461368 Update	customers	customer_city	T2 City	    T3 City	21/06/2021 23:14:09
+T3:421960683461368 Changes Committed.							21/06/2021 23:14:14
+T2:421960683458800 Update	customers	customer_city	T2 City	    T2 City	21/06/2021 23:14:14
+T2:421960683458800 Changes Committed.							21/06/2021 23:14:24
 -------------------------------------------------------------------------------------------------------
