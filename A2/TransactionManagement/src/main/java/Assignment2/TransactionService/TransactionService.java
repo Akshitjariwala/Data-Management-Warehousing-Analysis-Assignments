@@ -20,7 +20,6 @@ public class TransactionService  {
             beforeCity = result.getString("customer_city");
         }
         return result;
-
     }
     public String updateMethod(Connection connection, String city) throws SQLException {
         String SQL_UPDATE,SQL_SELECT;
@@ -47,7 +46,7 @@ public class TransactionService  {
     }
 
     public void printLogs(ArrayList<String> logs) throws IOException {
-        File file = new File("D:/Materiel/Database Analytics/AkshitJariwala_B00866255_Assignment2/Problem 2/TransactionManagement/transactionLogs.txt");
+        File file = new File("D:/Materiel/Database Analytics/AkshitJariwala_B00866255_Assignment2/A2/A2/TransactionManagement/transactionLogs.txt");
 
         FileWriter fo = new FileWriter(file,true);
         PrintWriter pw = new PrintWriter(fo);
@@ -83,9 +82,6 @@ public class TransactionService  {
             {
                 id = String.valueOf(result.getString("trx_id"));
             }
-
-            System.out.println(id);
-
             return id;
     }
 }

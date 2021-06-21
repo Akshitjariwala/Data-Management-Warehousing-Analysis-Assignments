@@ -46,7 +46,6 @@ T3:421877262853192 Changes Committed.												20/06/2021 22:43:34
 T2:421877262852336 Update		customers	customer_city	T2 City		T2 City		20/06/2021 22:43:34
 T2:421877262852336 Changes Committed.												20/06/2021 22:43:44
 -------------------------------------------------------------------------------------------------------
-
 Transaction ID     Operation    Table       Attribute       Before      After       Timestamp
 -------------------------------------------------------------------------------------------------------
 T1:421877262858328 SELECT		customers	zip_code		1151					20/06/2021 23:14:14
@@ -58,4 +57,51 @@ T3:421877262860040 Update		customers	customer_city	T3 City		T3 City		20/06/2021 
 T3:421877262860040 Changes Committed.												20/06/2021 23:14:34
 T2:421877262859184 Update		customers	customer_city	T3 City		T2 City		20/06/2021 23:14:34
 T2:421877262859184 Changes Committed.												20/06/2021 23:14:44
+-------------------------------------------------------------------------------------------------------
+Transaction ID     Operation    Table       Attribute       Before      After       Timestamp
+-------------------------------------------------------------------------------------------------------
+T1:421960683457944 SELECT		customers	zip_code		1151					21/06/2021 22:44:25
+T3:421960683461368 SELECT		customers	zip_code		1151					21/06/2021 22:44:30
+T1:421960683457944 Update		customers	customer_city	T2 City		T1 City		21/06/2021 22:44:30
+T1:421960683457944 Changes Committed.												21/06/2021 22:44:40
+T3:421960683461368 Update		customers	customer_city	T2 City		T3 City		21/06/2021 22:44:40
+T3:421960683461368 Changes Committed.												21/06/2021 22:44:45
+T2:421960683458800 Update		customers	customer_city	T2 City		T2 City		21/06/2021 22:44:45
+T2:421960683458800 Changes Committed.												21/06/2021 22:44:55
+-------------------------------------------------------------------------------------------------------
+Transaction ID     Operation    Table       Attribute       Before      After       Timestamp
+-------------------------------------------------------------------------------------------------------
+T1:421960683457944 SELECT		customers	zip_code		1151					21/06/2021 22:46:09
+T2:421960683458800 SELECT		customers	zip_code		1151					21/06/2021 22:46:09
+T3:421960683461368 SELECT		customers	zip_code		1151					21/06/2021 22:46:14
+T1:421960683457944 Update		customers	customer_city	T3 City		T1 City		21/06/2021 22:46:14
+T1:421960683457944 Changes Committed.												21/06/2021 22:46:24
+T3:421960683461368 Update		customers	customer_city	T3 City		T3 City		21/06/2021 22:46:24
+T3:421960683461368 Changes Committed.												21/06/2021 22:46:29
+T2:421960683458800 Update		customers	customer_city	T3 City		T2 City		21/06/2021 22:46:29
+T2:421960683458800 Changes Committed.												21/06/2021 22:46:39
+-------------------------------------------------------------------------------------------------------
+Transaction ID     Operation    Table       Attribute       Before      After       Timestamp
+-------------------------------------------------------------------------------------------------------
+T1:421960683457944 SELECT		customers	zip_code		1151					21/06/2021 22:46:51
+T2:421960683458800 SELECT		customers	zip_code		1151					21/06/2021 22:46:51
+T3:421960683461368 SELECT		customers	zip_code		1151					21/06/2021 22:46:56
+T1:421960683457944 Update		customers	customer_city	T2 City		T1 City		21/06/2021 22:46:56
+T1:421960683457944 Changes Committed.												21/06/2021 22:47:06
+T3:421960683461368 Update		customers	customer_city	T2 City		T3 City		21/06/2021 22:47:06
+T3:421960683461368 Changes Committed.												21/06/2021 22:47:11
+T2:421960683458800 Update		customers	customer_city	T2 City		T2 City		21/06/2021 22:47:11
+T2:421960683458800 Changes Committed.												21/06/2021 22:47:21
+-------------------------------------------------------------------------------------------------------
+Transaction ID     Operation    Table       Attribute       Before      After       Timestamp
+-------------------------------------------------------------------------------------------------------
+T1:421960683458800 SELECT		customers	zip_code		1151					21/06/2021 22:53:32
+T2:421960683457944 SELECT		customers	zip_code		1151					21/06/2021 22:53:32
+T3:421960683461368 SELECT		customers	zip_code		1151					21/06/2021 22:53:37
+T1:421960683458800 Update		customers	customer_city	T2 City		T1 City		21/06/2021 22:53:37
+T1:421960683458800 Changes Committed.												21/06/2021 22:53:48
+T3:421960683461368 Update		customers	customer_city	T2 City		T3 City		21/06/2021 22:53:48
+T3:421960683461368 Changes Committed.												21/06/2021 22:53:53
+T2:421960683457944 Update		customers	customer_city	T2 City		T2 City		21/06/2021 22:53:53
+T2:421960683457944 Changes Committed.												21/06/2021 22:54:03
 -------------------------------------------------------------------------------------------------------

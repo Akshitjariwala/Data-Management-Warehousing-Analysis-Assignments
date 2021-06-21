@@ -16,6 +16,9 @@ public class TransactionController {
 
         TransactionService service = new TransactionService();
 
+        t1.setPriority(1);
+        t2.setPriority(2);
+
         t1.start();
         t2.start();
         t3.start();
