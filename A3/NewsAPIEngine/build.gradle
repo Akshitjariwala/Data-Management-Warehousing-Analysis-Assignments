@@ -1,0 +1,31 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'Assignment3'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'com.github.KwabenBerko:News-API-Java:1.0.0'
+	implementation group: 'org.json', name: 'json', version: '20090211'
+	implementation group: 'org.apache.spark', name: 'spark-core_2.12', version: '3.1.2'
+	implementation group: 'org.eclipse.jetty', name: 'jetty-server', version: '11.0.5'
+}
+
+configurations.all {
+	exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+}
+
+test {
+	useJUnitPlatform()
+}
